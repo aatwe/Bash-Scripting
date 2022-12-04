@@ -1,0 +1,42 @@
+a) single line comments
+helloScript.sh
+
+#good code can be better	
+
+-----------------------------
+Q) What if we just write just simple : text -> give error , sccript will not run
+Q) What is bash script? plain text file with commands (sh - compatible command language)  //can run sh scripts
+				  Bourne again shell
+				  uses Korn shell and C shell
+				  uses bash programming language
+				  executed by? bash program
+				  
+Q) What does bash run on? Unix + Linux
+
+
+
+b) multi line comments
+
+: ' 
+good code can be better
+good code can be better
+good code can be better
+good code can be better '
+
+
+c) HereDoc
+c.1) helloScript.sh  //write heredoc delimeter
+
+cat << kreative					#start heredoc delimeter
+this is hello creative text
+kjsfkj
+kreative						#end heredoc delimeter
+
+c.2) Run script			//hereDoc delimeter text is visible //usecase: show comments on output
+./helloScript.sh
+this is hello creative text
+kjsfkj
+
+
+
+ 

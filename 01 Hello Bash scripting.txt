@@ -1,0 +1,59 @@
+a) How to print Hello Bash scripting
+
+a.1) Open terminal
+a.2) cat /etc/shells		//What does? shows shells available on system  //can use any
+					//what are shells? takes input from us --> executes program based on input
+
+>/bin/sh
+>/bin/bash
+/bin/rbash
+>/bin/dash
+>/usr/bin/screen
+
+
+
+a.3) which bash					//How to know path of bash		
+>/bin/bash
+
+
+a.4) How to add the bash script path in every script we write
+--------------------------------------------
+a.4.10 Create a script
+cd Desktop
+ls		//desktop empty
+touch helloScript.sh	//create a script
+//Open helloScript.shand write script
+--------------------------------------------
+a.4.2) write a script
+//helloScript.sh
+
+//add path
+#! /bin/bash
+echo "hello bash linuxhint audeience "
+//save
+---------------------------------------------
+a.4.3) Check if script executable
+//terminal
+ls
+>helloScript.sh
+ls -al						//go in details
+// helloScript.sh is not executable //owner has only rw permission, other group read permission, public can only read
+-rw-r--r--					//observe that no executable permissions present.What are executable permissions	
+						//basically cant execute this script program	
+--------------------------------------------------------------------------------------------------------------------------
+a.4.4)How to make script executable
+clear
+chmod	+x					//makes the script executable	//+x adds executable permissions
+helloScript.sh
+ls -al						//list details
+-rwxr-xr-x-					//observe file color and permissions changed
+						
+--------------------------------------------------------------------------------------------------------------------------
+a.4.5) execute the screen again		//
+./helloscript.sh
+>hello bash linuxhint audience
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+	

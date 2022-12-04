@@ -1,0 +1,112 @@
+a) declare variable, if - else statement
+
+a.1) write conditional logic in script file
+helloScript.sh
+
+#! /bin/bash
+
+count = 10
+
+if [ $count -eq 9 ]		
+then 
+	echo "the condition is true" 
+
+fi
+
+
+a.2) Run script file
+./helloScript.sh
+
+> //No output visible // no else block
+
+
+a.3) 2nd conditional logic
+helloScript.sh
+
+#! /bin/bash
+
+count = 10
+
+if [ $count -eq 9 ]		
+then 
+	echo "the condition is true" 
+else
+	echo "the condition is false"
+fi
+
+
+a.4) Run
+./helloScript.sh
+>the condition is false	//Output
+-----------------------------------------
+b) not equal sign
+
+if [ $count -ne 9 ]
+
+-----------------------------------------
+
+c) greater than
+
+if [ $count -gt 9 ] OR if ( $count > gt 9 )
+
+-----------------------------------------
+
+d) if-else- if
+
+d.1) 
+
+count = 10
+
+if ( $count < 9 )		
+then 
+	echo "first condition is true" 
+elif ($count > 9)
+
+then
+	echo "second condition is false"
+
+else
+	echo "the condition is false"
+
+fi						#how to close if statement block
+d.2)
+ clear
+   ./helloScript.sh
+//second condition is true
+
+
+-----------------------------------------
+
+e) & operator
+
+e.1) 
+
+helloScript.sh
+
+#! /bin/bash
+
+age = 10
+
+if[ "$age" -gt 18] && ["$age" -lt 40]				OR  		if[ "$age" -gt 18 -a "$age" -lt 40]
+then 
+	echo "Age is correct"
+else
+	echo	"Age is not correct"
+
+fi
+
+e.2)Run script
+./helloScript.sh
+>Age is not correct
+-----------------------------------------
+
+f) OR Operator
+if[ "$age" -gt 18] || ["$age" -gt 40]				OR  		if[ "$age" -gt 18 -o "$age" -lt 40]
+
+
+-----------------------------------------
+
+g) Case statement
+
+
+ 

@@ -1,0 +1,56 @@
+Objective: capture output from shell and send to file
+
+
+
+a) Open script file
+//helloScript.sh
+
+echo "hello bash linuxhint audience" > file.txt		//Output will go in file file.txt
+----------------------------------------------------------------------------------------
+b)Terminal
+
+./helloScript.sh		//Run the script
+				//file.txt will be created
+----------------------------------------------------------------------------------------
+c) Open file.txt
+
+hello bash linuxhint audience
+----------------------------------------------------------------------------------------
+d) edit script
+
+cat > file.txt
+----------------------------------------------------------------------------------------
+
+e) Terminal
+./helloScript.sh
+				//inside terminal we can edit file
+
+hi this is shell this is abhilash
+				//Ctrl + D //come out of text file editing
+----------------------------------------------------------------------------------------
+
+f) Reload file.txt
+hi this is shell this is abhilash	//file got edited from terminal (shell) itself
+							//what done? old text got replaced using cat
+
+----------------------------------------------------------------------------------------
+g) How to append text?
+
+g.1) append command in script cat >> file.txt
+
+helloScript.sh
+
+cat >> file.txt
+			//save text file
+
+g.2) run the script, write what text to add
+./helloScipt.sh
+yoyoyo whazza
+
+
+g.3) open file again	//text got added
+hi this is shell this is abhilash yoyoyo whazza
+----------------------------------------------------------------------------------------
+
+
+
